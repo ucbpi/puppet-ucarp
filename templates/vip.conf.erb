@@ -1,0 +1,25 @@
+# Virtual IP configuration file for UCARP
+
+# The number (from 001 to 255) in the name of the file is the identifier
+ID="<%= @name_r %>"
+
+# Virtual IP to share
+VIP_ADDRESS="<%= @vip_address %>"
+<% if @source_address -%>
+
+# Source Address
+SOURCE_ADDRESS="<%= @source_address %>"
+<% end -%>
+
+# Options to pass to the binary
+OPTIONS="<%= @options %>"
+<% if @upscript -%>
+
+# Script to run when our host becomes master
+UPSCRIPT="<%= @upscript %>"
+<% end -%>
+<% if @downscript -%>
+
+# Script to run when our host becomes backup
+DOWNSCRIPT="<%= @downscript %>"
+<% end -%>
