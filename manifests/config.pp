@@ -3,8 +3,7 @@
 # Configures ucarp
 #
 class ucarp::config {
-  $password = 'live'
-  #$password = $ucarp::password
+  $password = $ucarp::password
   $bind_interface = $ucarp::bind_interface
   $source_address = $ucarp::source_address
   $upscript = $ucarp::upscript
