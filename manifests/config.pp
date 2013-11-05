@@ -1,6 +1,6 @@
 # == Class: ucarp::config
 #
-# Configures ucarp
+# Sets up our configuration directory and our common config.
 #
 class ucarp::config {
   $password = $ucarp::password
