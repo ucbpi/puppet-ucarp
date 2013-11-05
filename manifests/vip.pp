@@ -2,10 +2,21 @@
 #
 # Defines a ucarp vip
 #
+# === Parameters
+#
+# [*vip_address*]
+#   VIP address that UCARP will maintain
+#
+# [*source_address*]
+#   Set's the host address to bind to. Defaults to $::ipaddress
+#
+# [*options*]
+#   Command line string of options to pass to the ucarp daemon
+#
 define ucarp::vip(
-  vip_address,
-  source_address = $::ipaddress,
-  options = '',
+  $vip_address,
+  $source_address = $::ipaddress,
+  $options = '',
 ) {
   require ucarp::config
 
