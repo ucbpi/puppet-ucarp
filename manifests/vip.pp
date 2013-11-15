@@ -18,7 +18,7 @@ define ucarp::vip(
   $source_address = $::ipaddress,
   $options = '',
 ) {
-  require ucarp::config
+  require ucarp
 
   $name_r = lead( $name, 3 )
 

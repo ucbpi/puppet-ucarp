@@ -1,0 +1,6 @@
+fixtures:
+  symlinks:
+    "ucarp": "#{source_dir}"
+  repositories:
+    "oski": "https://github.com/arusso/puppet-oski.git"
+    "stdlib": "https://github.com/puppetlabs/puppetlabs-stdlib.git"
